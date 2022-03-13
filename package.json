@@ -1,0 +1,44 @@
+{
+  "name": "@rmw/vue3-drag",
+  "type": "module",
+  "version": "0.0.4",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./*": "./lib/*"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "repository": "git@github.com:rmw-lib/vue3-drag.git",
+  "author": "gcxfd <i@rmw.link>",
+  "license": "MIT",
+  "browserslist": [
+    "> 5%",
+    "last 3 versions"
+  ],
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.19.0",
+    "@arco-themes/vue-vlang-vpm": "^0.0.2",
+    "@rmw/md-include": "^0.4.8",
+    "@rmw/thisdir": "^0.0.2",
+    "@sergeymakinen/vite-plugin-html-minimize": "^1.0.1",
+    "@vitejs/plugin-vue": "^2.2.4",
+    "autoprefixer": "^10.4.2",
+    "coffeescript": "^2.6.1",
+    "concurrently": "^7.0.0",
+    "interactjs": "^1.10.11",
+    "less": "^4.1.2",
+    "lodash-es": "^4.17.21",
+    "pug": "^3.0.2",
+    "rollup-plugin-coffee2": "^0.1.16",
+    "stylus": "^0.56.0",
+    "unplugin-auto-import": "^0.6.4",
+    "unplugin-vue-components": "^0.18.0",
+    "vite": "^2.8.6",
+    "vite-plugin-compress": "^2.1.0",
+    "vite-plugin-html": "^3.1.0",
+    "vue": "^3.2.31"
+  },
+  "dependencies": {}
+}

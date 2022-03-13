@@ -1,0 +1,54 @@
+@import './font/init.styl'
+@import './border_0.5px.styl'
+@import './arco.styl'
+
+body
+  background #fff
+  cursor url(':/cursor/default.svg'), auto
+  line-height 1.62
+
+html, body, body>p
+  height 100%
+  width 100%
+  align-items center
+  justify-content center
+  display flex
+  margin 0
+  flex 1
+  overflow hidden
+
+iframe
+  border 0
+  flex 1
+
+p, pre, code
+  word-break break-word
+  word-wrap break-word
+
+pre, code
+  white-space break-spaces
+
+a
+  outline none
+  color #437ABE
+  text-decoration none
+
+a:hover, a:focus
+  color #2E5EA0
+
+input, textarea, body .arco-input-wrapper, body .arco-input-wrapper input, body .arco-icon-hover
+  cursor url(':/cursor/input.svg'), text
+
+a, button, input[type=button], .arco-tabs-nav-tab .arco-tabs-tab
+  cursor url(':/cursor/pointer.svg') 5 6, pointer
+
+iframe
+  flex 1
+
+dialog
+  display flex
+  align-items center
+  border 0
+  padding 0
+  background transparent
+  margin auto

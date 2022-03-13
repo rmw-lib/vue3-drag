@@ -1,0 +1,12 @@
+node_modules/
+
+.DS_Store
+*.log
+*.out
+*.lock
+
+vite.config.js
+src/config/*.js
+src/config/is_dev.coffee
+src/index.html
+lib/

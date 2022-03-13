@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+_DIR=$(dirname $(realpath "$0"))
+
+filepath=$(realpath $@)
+
+cd $(dirname $filepath)/..
+
+exec node  --trace-warnings \
+  --es-module-specifier-resolution=node \
+  --trace-uncaught \
+  --experimental-fetch \
+  --expose-gc \
+  --experimental-loader \
+  "@rmw/coffee-loader" \
+  --unhandled-rejections=strict $filepath
