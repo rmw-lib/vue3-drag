@@ -27,13 +27,14 @@ setup:({minH,minW,move})=>
     data_x = 'x'
     data_y = 'y'
     round = Math.round
+    floor = Math.floor
     _move = (target,left,top)=>
       left = round left
       top = round top
 
       if left or top
-        x = parseInt(target.getAttribute(data_x)) or 0
-        y = parseInt(target.getAttribute(data_y)) or 0
+        x = floor(target.getAttribute(data_x)) or 0
+        y = floor(target.getAttribute(data_y)) or 0
         # translate when resizing from top or left edges
         x += left
         y += top
